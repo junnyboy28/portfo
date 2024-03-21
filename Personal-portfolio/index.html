@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>UI/UX Designer</p>
+            <h1>Hi, I'm <span>Jimil</span><br>An AVERAGE Engineer</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/photoo.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Bachelor's student at Goa University (PCCE) specializing in Computer Science Engineering,  proficient in Python, C++, C, JAVA, and Dart, with a knack for generating innovative ideas spanning application concepts, organizational strategies, and startup visions. Skilled in UI/UX Design using Figma and experienced in frontend development with HTML, CSS, and JavaScript. Have a keen interest on Cyber Security, Ethical Hacking, and Open Source Intelligence (OSINT) as well.Recognized for leadership as Vice President of the Entrepreneurship Cell, orchestrating impactful events and fostering industry connections. Also serving as Magazine Secretary at ACE Student Chapter and member of BHP Robotics, I actively contribute to various organizations and engage in event management. Committed to community service through the Rotaract Club of Mapusa and the National Service Scheme (NSS).</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience (Project Based)</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>Building, creating and maintaining websites or web applications</li>
+                        <li><span>App Development</span><br>Developing Android Applications </li>
+                        <li><span>Data Science</span><br>Data Mining, Machine learning and analyzing data</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023 - Current</span><br>Scaling challanges and solutions for FullStack/FullSystem Development</li>
+                        <li><span>Sept 2023</span><br>Oncocare - A software based product for Cancer patients and Oncologists</li>
+                        <li><span>Oct 2023</span><br>LLM Patent Classifier - Chatbot that classifies patent documents and summarises it.</li>
+                        <li><span>Sept 2023</span><br>Mithya2k24 - A College event management system with a database.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021 - 2025</span><br>B.E Computer Engineering (Hons. AiML) from PCCE (GU), Verna</li>
+                        <li><span>2021</span><br>HSC from KV I.N.S Mandovi.</li>
+                        <li><span>2019</span><br>SSC from KV I.N.S Mandovi.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Designing and developing web applications or websites.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>Android Application Development</h2>
+                <p>Designing, developing and deploying of an android application.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>Data Analysis</h2>
+                <p>Analysing, reforming and even mining any data sets.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/mithya.jpg">
+                <div class="layer">
+                    <h3>Mithya2k24 </h3>
+                    <p>College event management encompasses the planning, execution, and coordination of diverse campus events to enrich the campus community experience.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/patent.png">
+                <div class="layer">
+                    <h3>LLM Patent Classifer</h3>
+                    <p>Chatbot that classifies patent documents and summarises it.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/oncocare.jpg">
+                <div class="layer">
+                    <h3>Oncocare</h3>
+                    <p>A software based product for Cancer Patients and Oncologists. A chatbot, Maps showing nearby Oncologists and Medicals selling cancer drugs and medicines and a symptom tracker Integrated.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> jimilmandani28@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>+91 9175045787</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/jimil.mandani?mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a>
+                    <a href="https://x.com/jimil_mandani?t=O1UnQ6lqZMiHbA8_kzF8yg&s=09"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/jimil.mandani?igsh=MW4yM2tjaGN3ODltag=="><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/jimil-mandani-ab804121b/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/jimilmandani.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Hope you had a GREAT TIME!</p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = '<https://script.google.com/macros/s/AKfycbwvWCO_rceVi0QFkpvUpfN9qKEEUru7JfbfZS690hX_PnZGYl3p43DhMAkT3ZtFwBv-/exec>' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
